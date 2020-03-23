@@ -27,3 +27,13 @@ printf "Fourth Operation: $y \n"
 dictionary[Forthoperation]=$y
 
 echo ${!dictionary[@]} ' : ' ${dictionary[@]}
+
+#Initialise Array
+declare -a Array
+count=0
+for var in ${dictionary[@]}
+do
+	Array[$count]=$var
+	(( count++ ))
+done
+echo "Array: ${Array[@]}"
