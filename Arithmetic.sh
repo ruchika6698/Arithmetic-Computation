@@ -59,16 +59,16 @@ Descending
 function Ascending(){
 	for((i=0; i < ${#Array[@]}; i++))
 	do
-   	for((j=$i+1; j<${#Array[@]}; j++))
-   	do
-      	if [[ ${Array[i]} -gt ${Array[j]} ]]
-      	then
-         	temp=${Array[i]}
-         	Array[i]=${Array[j]}
-         	Array[j]=$temp
-      	fi
-   	done
-	done
+		for((j=$i+1; j<${#Array[@]}; j++))
+		do
+			if [[ ${Array[i]} -gt ${Array[j]} ]]
+			then
+				temp=${Array[i]}
+				Array[i]=${Array[j]}
+				Array[j]=$temp
+			fi
+		done
+done
 echo "Ascending Order:${Array[@]}"
 }
 
