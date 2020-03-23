@@ -37,3 +37,21 @@ do
 	(( count++ ))
 done
 echo "Array: ${Array[@]}"
+
+function Descending(){
+	for((i=0; i < ${#Array[@]}; i++))
+	do
+		for((j=$i+1; j<${#Array[@]}; j++))
+		do
+			if [[ ${Array[i]} -lt ${Array[j]} ]]
+  			then
+				temp=${Array[i]}
+				Array[i]=${Array[j]}
+				Array[j]=$temp
+			fi
+		done
+	done
+	echo "Descending Order:${Array[@]}"
+}
+
+Descending
