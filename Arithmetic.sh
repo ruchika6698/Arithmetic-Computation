@@ -9,3 +9,5 @@ read -p "Enter number c:" c
 x=$(( $a + $b * $c ))
 printf "First Operation: $x \n"
 
+u=$((	$a * $b + $c ))
+printf "Second Operation: $u \n"
