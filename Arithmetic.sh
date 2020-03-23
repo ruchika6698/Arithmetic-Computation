@@ -11,3 +11,6 @@ printf "First Operation: $x \n"
 
 u=$((	$a * $b + $c ))
 printf "Second Operation: $u \n"
+
+z=$(( $c + $a / $b ))
+printf "Third Operation: $z \n"
