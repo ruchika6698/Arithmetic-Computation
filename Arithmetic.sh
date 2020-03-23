@@ -14,3 +14,6 @@ printf "Second Operation: $u \n"
 
 z=$(( $c + $a / $b ))
 printf "Third Operation: $z \n"
+
+y=$(( $a % $b + $c ))
+printf "Fourth Operation: $y \n"
